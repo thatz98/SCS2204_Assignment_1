@@ -15,9 +15,9 @@ object Assignment_1 extends App{
     var discount: Double = 0.4
     var total: Double = 0
     if (c <= 50) {
-      total = 3*c + price*c*(1 - discount)
+      total = 3 + price*c*(1 - discount)
     } else {
-      total = ((1 - discount)*price*c) + 3*c + 0.75*(c - 50)
+      total = ((1 - discount)*price*c) + 3 + 0.75*(c - 50)
     }
     println("Total price = " + "%.2f".format(total).toDouble)
   }
