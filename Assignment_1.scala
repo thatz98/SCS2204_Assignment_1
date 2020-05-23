@@ -1,4 +1,4 @@
-object Assignment_12 extends App {
+object Assignment_1 extends App {
 
   //Question 1
 
