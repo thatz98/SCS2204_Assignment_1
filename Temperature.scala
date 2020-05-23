@@ -1,29 +1,23 @@
-object Assignment_1 extends App{
+  //Question 1
+  
+  def F(t: Double): Unit = t*1.8 + 32
 
-  def q1(t: Double): Unit ={
-    var tmp: Double = t*1.8 + 32
-    println(t + " Celcius = " + tmp + " Farenheit")
-  }
+  F(35)
 
-  def q2(r: Double): Unit ={
-    var vol: Double = math.Pi*r*r*r*4/3
-    println("Volume of a sphere with radius " + r + " = " + vol)
-  }
+  //Question 2
+  
+  def volume(r: Double) = math.Pi*r*r*r*4/3
 
-  def q3(c: Int): Unit = {
-    var price: Double = 24.95
-    var discount: Double = 0.4
-    var total: Double = 0
-    if (c <= 50) {
-      total = 3 + price*c*(1 - discount)
-    } else {
-      total = ((1 - discount)*price*c) + 3 + 0.75*(c - 50)
-    }
-    println("Total price = " + "%.2f".format(total).toDouble)
-  }
+  volume(5)
 
-  q1(35)
-  q2(5)
-  q3(60)
-}
+  //Question 3
+  
+  def bookPrice(c: Int) = c*24.95
+  
+  def discount(amount: Double) = amount*0.4
+  
+  def shippingPrice(c: Int) = if(c<=50) 3 else 3 + (x-50)*0.75
+  
+  def totalPrice(c: Int) = bookPrice(c) + shippingPrice(c) + discount(bookPrice(c))
 
+  totalPrice(60)
