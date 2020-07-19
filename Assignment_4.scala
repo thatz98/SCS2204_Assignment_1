@@ -19,4 +19,5 @@ object Assignment_4 extends App{
     val decryptedMessage = ceaserCipher(decrypt,encryptedMessage,textShift,alphabet)
 
     println("Encrypted text \"" + encryptedMessage + "\" into \"" + decryptedMessage + "\"")
+    
 }
