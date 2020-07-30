@@ -10,6 +10,8 @@ object Assignment_5 extends App{
 
     val numer: Int = n/gcd(n,d)
     val denom: Int = d/gcd(n,d)
+    
+    def this(n: Int) = this(n,1)
 
     override def toString: String = this.numer + "/" + this.denom
 
