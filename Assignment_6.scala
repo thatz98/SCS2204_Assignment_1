@@ -28,7 +28,7 @@ case class Point(a: Int, b: Int){
   //Question 1
 
   def +(that: Point) = Point(this.x+that.x,this.y+that.y)
-
+  
   //Question 2
 
   def move(dx: Int, dy:Int) = Point(this.x+dx,this.y+dy)
